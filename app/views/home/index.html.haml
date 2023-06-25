@@ -2,6 +2,9 @@
 %html
   %head
     %title Aishwarya Yerram | Software Engineer - Backend | axyerram@gmail.com
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag "application", "data-turbo-track": "reload"
     %meta{content: "text/html; charset=utf-8", "http-equiv" => "content-type"}/
     %meta{content: "", name: "keywords"}/
     %meta{content: "", name: "description"}/
@@ -34,75 +37,77 @@
                   %p
                     With over 4 years of experience as a Software Development Engineer, I possess a strong expertise in software process design, development, and testing. My deep understanding of Agile methodologies, including continuous delivery, code reviews, TDD/BDD, and pair programming, has led to a remarkable 50% performance improvement. I am proficient in API development, partner integration, and API testing, achieving a notable 14% increase in API performance. Furthermore, my ability to manage and support technical integration projects ensures seamless integration with customer systems and third-party databases. I am well-versed in cloud computing platforms like AWS, Azure, and GCP, and have successfully migrated data from previous providers. With my strong analytical skills, I derive valuable insights from complex data sets using statistical methods, data visualization, and data modeling techniques, contributing to a revenue increase of $1 million. I have a solid knowledge of databases and extensive experience in microservices architecture. Excellent communication skills and frequent engagement with stakeholders, coupled with thorough documentation, complete my profile as a highly capable Software Development Engineer.
               / // .yui-gf
-              .yui-gf
-                .yui-u.first
-                  %h2 Skills
-                .yui-u
-                  .talent
-                    %h2 Web Design
-                    %p Assertively exploit wireless initiatives rather than synergistic core competencies.
-                  .talent
-                    %h2 Interface Design
-                    %p Credibly streamline mission-critical value with multifunctional functionalities.
-                  .talent
-                    %h2 Project Direction
-                    %p Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.
+              / .yui-gf
+              /   .yui-u.first
+              /     %h2 Skills
+              /   .yui-u
+              /     .talent
+              /       %h2 Web Design
+              /       %p Assertively exploit wireless initiatives rather than synergistic core competencies.
+              /     .talent
+              /       %h2 Interface Design
+              /       %p Credibly streamline mission-critical value with multifunctional functionalities.
+              /     .talent
+              /       %h2 Project Direction
+              /       %p Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.
               / // .yui-gf
               .yui-gf
                 .yui-u.first
-                  %h2 Technical
+                  %h2 Technical Skills
                 .yui-u
-                  %ul.talent
-                    %li XHTML
-                    %li CSS
-                    %li.last Javascript
-                  %ul.talent
-                    %li Jquery
-                    %li PHP
-                    %li.last CVS / Subversion
-                  %ul.talent
-                    %li OS X
-                    %li Windows XP/Vista
-                    %li.last Linux
+                  %li Languages: Ruby on Rails, Python, React, C#, C, C++, Java, HTML/CSS, JavaScript, RSpec
+                  %li Databases: SQL Server, MySQL, PostgreSQL, MongoDB
+                  %li Visualization Tools: Tableau, Power BI, MS Excel
+                  %li Technologies/Frameworks: Linux, Jenkins, Git, GitHub, BitBucket, JUnit
+                  %li Cloud Computing: Amazon Web Services, Google Cloud Platforms, Microsoft Azure, Docker, Kubernetes
+                  %li Search Engines: ElasticSearch
+                  %li Memory Cache: Redis, Sidekiq
+                  %li OS/Platforms: Windows, Mac OS, Linux
               / // .yui-gf
               .yui-gf
                 .yui-u.first
                   %h2 Experience
                 / // .yui-u
                 .yui-u
-                  .job
-                    %h2 Facebook
-                    %h3 Senior Interface Designer
-                    %h4 2005-2007
-                    %p Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence.
-                  .job
-                    %h2 Apple Inc.
-                    %h3 Senior Interface Designer
-                    %h4 2005-2007
-                    %p Progressively reconceptualize multifunctional "outside the box" thinking through inexpensive methods of empowerment. Compellingly morph extensive niche markets with mission-critical ideas. Phosfluorescently deliver bricks-and-clicks strategic theme areas rather than scalable benefits.
-                  .job
-                    %h2 Microsoft
-                    %h3 Principal and Creative Lead
-                    %h4 2004-2005
-                    %p Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials.
                   .job.last
-                    %h2 International Business Machines (IBM)
-                    %h3 Lead Web Designer
-                    %h4 2001-2004
-                    %p Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.
+                    %h2 West Agile Labs
+                    %h3 Software Development Engineer
+                    %h5 Hyderabad, Telangana, India
+                    %h4 2018 - 2021
+                    %li Developed software applications exceeding client expectations, ensuring effective implementation and adherence to project requirements maintaining the MVC architecture.
+                    %li Extensive experience working throughout the entire client lifecycle, establishing strong working relationships with onboarding, technical account management, and engineering teams.
+                    %li Delivered high-quality software on time and within budget, incorporating efficient code and testing procedures that increased efficiency by 30%.
+                    %li Introduced a elasticsearch logic for searching, which improved the page speed by 50% along with the complex queries.
+                    %li Built RESTful APIs that served data to the Angular front-end based on dynamically used user inputs it handled more than 10,000 concurrent users.
+                    %li Utilized version control, CI/CD and system configuration for streamlined development workflows.
+                    %li Proactively resolved data inconsistencies and production issues by actively managing JIRA tickets, which contributed to manager by 15%.
+                    %li Analyzed problems, made decisions and provided effective solutions, which I gave the contribution by 10%.
+                    %li Contributing throughout the software development lifecycle, including design reviews, writing user stories, reviewing code, and conducting automated testing using tools like RSpec and Postman, by using these I have decreased the bugs by 50%.
+                    %li Managed code repositories using version control systems, facilitating effective collaboration with team members.
+                    %li Designed and built user-friendly interfaces using React, simplifying overall management, ensuring ease of use for end users.
+                    %li Designed a special project during internship, earning management recognition which helped internal project contribution by 25%.
+                    %li Played an active role in the deployment process, ensuring smooth transitions from development to production environments and reduced the production failures by 30%.
+                    %li Demonstrated strong problem-solving and analytical skills and mentored a team of 3 people.
                 / // .yui-u
               / // .yui-gf
-              .yui-gf.last
+              .yui-gf
                 .yui-u.first
                   %h2 Education
                 .yui-u
-                  %h2 Wichita State University - Wichita, Kansas
+                  %h2 Wichita State University - Wichita, Kansas -- 2021 - 2023
                   %h3 Master of Science — Major in Data Science
-                  %h3 3.9 GPA
+                  %li 3.9 GPA
                 .yui-u
-                  %h2 Vasavi College of Engineering - Hyderabad, Telangana, India
+                  %h2 Vasavi College of Engineering - Hyderabad, Telangana, India -- 2014 - 2018
                   %h3 Bachelor of Engineering — Information Technology
                   %h3 8.6 GPA
+              .yui-gf.last
+                .yui-u.first
+                  %h2 Certifications
+                .yui-u
+                  %li The Python Course - Kaggle ------- March 2023
+                  %li The complete Ruby on Rails developing Course - Udemy ------- March 2018
+                  %li Comprehensive Ruby Programming - Udemy ------- February 2018
               / // .yui-gf
             / // .yui-b
           / // yui-main
